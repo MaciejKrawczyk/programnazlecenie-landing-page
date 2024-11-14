@@ -27,7 +27,7 @@ import {Button} from "~/components/ui/button";
             <!---->
 
             <div class="my-6">
-                <div class="grid grid-cols-4 mb-3">
+                <div class="sm:grid sm:grid-cols-4 mb-3">
                     <IconButton text="Produkcja">
                         <Factory class="w-4 h-4"/>
                     </IconButton>
@@ -44,7 +44,7 @@ import {Button} from "~/components/ui/button";
                         <Gem class="w-4 h-4"/>
                     </IconButton>
                 </div>
-                <div class="grid grid-cols-2">
+                <div class="sm:grid sm:grid-cols-2">
                     <IconButton text="Przemysł Motoryzacyjny">
                         <KeySquare class="w-4 h-4"/>
                     </IconButton>
@@ -56,15 +56,15 @@ import {Button} from "~/components/ui/button";
             </div>
 
             <!---->
-            <h2 class="text-4xl font-semibold my-6">Zespół</h2>
+            <h2 class="text-4xl font-semibold my-6 mt-16">Zespół</h2>
             <div>
-                <div class="grid grid-cols-2 gap-10">
+                <div class="grid sm:grid-cols-2 gap-10 grid-cols-1">
                     <TeamPerson :key="1"/>
                     <TeamPerson :key="2"/>
                 </div>
             </div>
             <!---->
-            <h2 class="text-4xl font-semibold my-6">Dlaczego my?</h2>
+            <h2 class="text-4xl font-semibold my-6 mt-16">Dlaczego my?</h2>
             <p class="text-xl text-center">
                 Jesteśmy programistami z wieloletnim doświadczeniem.
             </p>
@@ -74,8 +74,14 @@ import {Button} from "~/components/ui/button";
                         <CarouselItem class="basis-1/3" v-for="(_, index) in 5" :key="index">
                             <div class="p-1">
                                 <Card>
-                                    <CardContent class="flex items-center justify-center h-96">
-                                        <span class="text-4xl font-semibold">{{ index + 1 }}</span>
+                                    <CardContent class="flex flex-col items-center justify-center p-4">
+                                        <img src="public/logo-stelmach.svg" alt="PZ Stelmach logo" width="165">
+                                        <span class="my-2 text-md">PZ Stelmach, Opole</span>
+                                        <h6 class="text-xl font-semibold text-center my-2">Automatyzacja pracy
+                                            pracowników i zarządzanie zasobami</h6>
+                                        <p class="text-center text-lg">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing elit. Donec id iaculis quam. Aliquam aliquam lacus efficitur,
+                                            consequat metus sit amet, sollicitudin nunc. Nunc augue lorem</p>
                                     </CardContent>
                                 </Card>
                             </div>
@@ -87,7 +93,10 @@ import {Button} from "~/components/ui/button";
             </div>
             <!---->
             <div>
-                <h3>Umów się na bezpłatną konsultację</h3>
+                <h3 class="text-3xl font-semibold mt-16">Umów się na bezpłatną konsultację</h3>
+                <p class="text-xl text-center">
+                    Jesteśmy programistami z wieloletnim doświadczeniem.
+                </p>
             </div>
         </main>
     </div>
