@@ -91,8 +91,8 @@ const props = defineProps<{
                                 <SquareArrowOutUpRight class="w-4 h-4"/>
                             </Button>
                         </div>
-                        <div class="flex flex-1">
-                            siema
+                        <div class="flex flex-1 h-64">
+<!--                            <img src="public/user-photo.jpg" alt="Maciej Krawczyk foto1" class="h-64 object-fill">-->
                         </div>
                     </div>
                 </DrawerHeader>
@@ -112,7 +112,7 @@ const props = defineProps<{
                         </div>
 
                         <h5 class="text-2xl">Technologia</h5>
-                        <div class="grid grid-cols-2">
+                        <div class="flex">
                             <div>
                                 <TechnologyListItem main-text="Django" sub-text="1 rok"/>
                                 <TechnologyListItem main-text="Django" sub-text="1 rok"/>
