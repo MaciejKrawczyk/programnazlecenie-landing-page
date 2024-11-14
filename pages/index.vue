@@ -1,174 +1,94 @@
 <script setup lang="ts">
 import IconButton from "~/components/custom/IconButton.vue";
-import {
-    Factory,
-    Gavel,
-    Gem,
-    Github,
-    GraduationCap,
-    HandCoins,
-    KeySquare,
-    Linkedin,
-    Scale,
-    Truck
-} from "lucide-vue-next";
+import {Factory, Gem, HandCoins, KeySquare, Scale, Truck} from "lucide-vue-next";
+import TeamPerson from "~/components/custom/TeamPerson.vue";
+import {Carousel, CarouselContent, CarouselItem} from "~/components/ui/carousel";
+import {Card, CardContent} from "~/components/ui/card";
+import {Button} from "~/components/ui/button";
 </script>
 
 <template>
     <div class="flex justify-center items-center">
-        <main class="flex flex-col w-screen max-w-screen-2xl">
-
-            <div>
-                <h1>Pomagamy stworzyć Twój system Lepiej</h1>
-                <p>
+        <main class="flex flex-col w-screen max-w-screen-xl items-center">
+            <!---->
+            <h1 class="text-5xl font-semibold">Pomagamy stworzyć Twój system Lepiej</h1>
+            <div class="my-6">
+                <p class="text-2xl text-center">
                     Jesteśmy programistami z wieloletnim doświadczeniem.
+                </p>
+                <p class="text-2xl text-center">
                     Tworzymy rozwiązania IT, które wspierają rozwój i usprawniają procesy.
                 </p>
-                <div>
-                    <Button>Umów spotkanie</Button>
-                    <Button>Poznaj nas</Button>
+            </div>
+            <div class="w-1/3 flex justify-around">
+                <Button>Umów spotkanie</Button>
+                <Button variant="outline">Poznaj nas</Button>
+            </div>
+            <!---->
+
+            <div class="my-6">
+                <div class="grid grid-cols-4 mb-3">
+                    <IconButton text="Produkcja">
+                        <Factory class="w-4 h-4"/>
+                    </IconButton>
+
+                    <IconButton text="Tranport">
+                        <Truck class="w-4 h-4"/>
+                    </IconButton>
+
+                    <IconButton text="Systemy ERP i CRM">
+                        <HandCoins class="w-4 h-4"/>
+                    </IconButton>
+
+                    <IconButton text="Złotnictwo">
+                        <Gem class="w-4 h-4"/>
+                    </IconButton>
                 </div>
-            </div>
-
-            <div>
-                <IconButton text="Produkcja">
-                    <Factory class="w-4 h-4"/>
-                </IconButton>
-
-                <IconButton text="Tranport">
-                    <Truck class="w-4 h-4"/>
-                </IconButton>
-
-                <IconButton class="Systemy ERP i CRM">
-                    <HandCoins class="w-4 h-4"/>
-                </IconButton>
-
-                <IconButton text="Złotnictwo">
-                    <Gem class="w-4 h-4"/>
-                </IconButton>
-
-                <IconButton text="Przemysł Motoryzacyjny">
-                    <KeySquare class="w-4 h-4"/>
-                </IconButton>
-
-                <IconButton text="Kancelaria Prawna">
-                    <Scale class="w-4 h-4"/>
-                </IconButton>
-            </div>
-
-            <div>
-                <h2>Zespół</h2>
                 <div class="grid grid-cols-2">
-                    <div>
-                        <img src="public/user-photo.jpg" alt="Maciej Krawczyk foto">
-                        <div class="flex">
-                            <h4>Maciej Krawczyk</h4>
-                            <Button size="icon">
-                                <Linkedin class="w-4 h-4"/>
-                            </Button>
-                            <Button size="icon">
-                                <Github class="w-4 h-4"/>
-                            </Button>
-                        </div>
-                        <h5>Full stack developer</h5>
-                        <p>Złotnictwo, systemy produkcyjne, systemy dla kancelarii prawnych, CRM, ERP</p>
+                    <IconButton text="Przemysł Motoryzacyjny">
+                        <KeySquare class="w-4 h-4"/>
+                    </IconButton>
 
-                        <div>
-                            <div class="flex justify-between items-center">
-                                <div class="flex justify-center items-center">
-                                    <Button size="icon">
-                                        <Gavel class="w-4 h-4"/>
-                                    </Button>
-                                    <div class="flex flex-col">
-                                        <p>Prosperitas, Kraków</p>
-                                        <span>Full stack developer</span>
-                                    </div>
-                                </div>
-                                <span>
-                                        2024 - obecnie
-                                </span>
-                            </div>
-
-                            <Separator class="my-4"/>
-
-                            <div class="flex justify-between items-center">
-                                <div class="flex justify-center items-center">
-                                    <Button size="icon">
-                                        <GraduationCap class="w-4 h-4"/>
-                                    </Button>
-                                    <div class="flex flex-col">
-                                        <p>Prosperitas, Kraków</p>
-                                        <span>Full stack developer</span>
-                                    </div>
-                                </div>
-                                <span>
-                                        2024 - obecnie
-                                </span>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div>
-                        <img src="public/user-photo.jpg" alt="Robert Jureczko foto">
-                        <div class="flex">
-                            <h4>Maciej Krawczyk</h4>
-                            <Button size="icon">
-                                <Linkedin class="w-4 h-4"/>
-                            </Button>
-                            <Button size="icon">
-                                <Github class="w-4 h-4"/>
-                            </Button>
-                        </div>
-                        <h5>Full stack developer</h5>
-                        <p>Złotnictwo, systemy produkcyjne, systemy dla kancelarii prawnych, CRM, ERP</p>
-
-                        <div>
-                            <div class="flex justify-between items-center">
-                                <div class="flex justify-center items-center">
-                                    <Button size="icon">
-                                        <Gavel class="w-4 h-4"/>
-                                    </Button>
-                                    <div class="flex flex-col">
-                                        <p>Prosperitas, Kraków</p>
-                                        <span>Full stack developer</span>
-                                    </div>
-                                </div>
-                                <span>
-                                        2024 - obecnie
-                                </span>
-                            </div>
-
-                            <Separator class="my-4"/>
-
-                            <div class="flex justify-between items-center">
-                                <div class="flex justify-center items-center">
-                                    <Button size="icon">
-                                        <GraduationCap class="w-4 h-4"/>
-                                    </Button>
-                                    <div class="flex flex-col">
-                                        <p>Prosperitas, Kraków</p>
-                                        <span>Full stack developer</span>
-                                    </div>
-                                </div>
-                                <span>
-                                        2024 - obecnie
-                                </span>
-                            </div>
-
-                        </div>
-                    </div>
+                    <IconButton text="Kancelaria Prawna">
+                        <Scale class="w-4 h-4"/>
+                    </IconButton>
                 </div>
             </div>
 
+            <!---->
+            <h2 class="text-4xl font-semibold my-6">Zespół</h2>
             <div>
-                <h2>Dlaczego my?</h2>
+                <div class="grid grid-cols-2 gap-10">
+                    <TeamPerson :key="1"/>
+                    <TeamPerson :key="2"/>
+                </div>
             </div>
-
+            <!---->
+            <h2 class="text-4xl font-semibold my-6">Dlaczego my?</h2>
+            <p class="text-xl text-center">
+                Jesteśmy programistami z wieloletnim doświadczeniem.
+            </p>
+            <div>
+                <Carousel>
+                    <CarouselContent>
+                        <CarouselItem class="basis-1/3" v-for="(_, index) in 5" :key="index">
+                            <div class="p-1">
+                                <Card>
+                                    <CardContent class="flex items-center justify-center h-96">
+                                        <span class="text-4xl font-semibold">{{ index + 1 }}</span>
+                                    </CardContent>
+                                </Card>
+                            </div>
+                        </CarouselItem>
+                    </CarouselContent>
+                    <CarouselNext/>
+                    <CarouselPrevious/>
+                </Carousel>
+            </div>
+            <!---->
             <div>
                 <h3>Umów się na bezpłatną konsultację</h3>
             </div>
-
         </main>
     </div>
 </template>
