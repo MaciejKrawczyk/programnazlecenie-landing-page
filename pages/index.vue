@@ -68,8 +68,8 @@ import {Button} from "~/components/ui/button";
             <p class="text-xl text-center">
                 Jesteśmy programistami z wieloletnim doświadczeniem.
             </p>
-            <div>
-                <Carousel>
+            <div class="flex justify-center items-center">
+                <Carousel class="w-5/6">
                     <CarouselContent>
                         <CarouselItem class="basis-1/3" v-for="(_, index) in 5" :key="index">
                             <div class="p-1">
