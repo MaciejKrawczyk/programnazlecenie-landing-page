@@ -59,8 +59,8 @@ import {Button} from "~/components/ui/button";
             <h2 class="text-4xl font-semibold my-6 mt-16">Zespół</h2>
             <div>
                 <div class="grid sm:grid-cols-2 gap-10 grid-cols-1">
-                    <TeamPerson :key="1"/>
-                    <TeamPerson :key="2"/>
+                    <TeamPerson />
+                    <TeamPerson />
                 </div>
             </div>
             <!---->
@@ -68,29 +68,32 @@ import {Button} from "~/components/ui/button";
             <p class="text-xl text-center">
                 Jesteśmy programistami z wieloletnim doświadczeniem.
             </p>
-            <div class="flex justify-center items-center">
-                <Carousel class="w-5/6">
-                    <CarouselContent>
-                        <CarouselItem class="basis-1/3" v-for="(_, index) in 5" :key="index">
-                            <div class="p-1">
-                                <Card>
-                                    <CardContent class="flex flex-col items-center justify-center p-4">
-                                        <img src="public/logo-stelmach.svg" alt="PZ Stelmach logo" width="165">
-                                        <span class="my-2 text-md">PZ Stelmach, Opole</span>
-                                        <h6 class="text-xl font-semibold text-center my-2">Automatyzacja pracy
-                                            pracowników i zarządzanie zasobami</h6>
-                                        <p class="text-center text-lg">Lorem ipsum dolor sit amet, consectetur
-                                            adipiscing elit. Donec id iaculis quam. Aliquam aliquam lacus efficitur,
-                                            consequat metus sit amet, sollicitudin nunc. Nunc augue lorem</p>
-                                    </CardContent>
-                                </Card>
-                            </div>
-                        </CarouselItem>
-                    </CarouselContent>
-                    <CarouselNext/>
-                    <CarouselPrevious/>
-                </Carousel>
-            </div>
+            <Carousel
+                class="relative w-full max-w-sm"
+                :opts="{
+                    align: 'start',
+                }"
+            >
+                <CarouselContent>
+                    <CarouselItem v-for="(_, index) in 5">
+                        <div class="p-1">
+                            <Card>
+                                <CardContent class="flex flex-col items-center justify-center p-4">
+                                    <img src="public/logo-stelmach.svg" alt="PZ Stelmach logo" width="165">
+                                    <span class="my-2 text-md">PZ Stelmach, Opole</span>
+                                    <h6 class="text-xl font-semibold text-center my-2">Automatyzacja pracy
+                                        pracowników i zarządzanie zasobami</h6>
+                                    <p class="text-center text-lg">Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing elit. Donec id iaculis quam. Aliquam aliquam lacus efficitur,
+                                        consequat metus sit amet, sollicitudin nunc. Nunc augue lorem</p>
+                                </CardContent>
+                            </Card>
+                        </div>
+                    </CarouselItem>
+                </CarouselContent>
+                <CarouselNext/>
+                <CarouselPrevious/>
+            </Carousel>
             <!---->
             <div>
                 <h3 class="text-3xl font-semibold mt-16">Umów się na bezpłatną konsultację</h3>

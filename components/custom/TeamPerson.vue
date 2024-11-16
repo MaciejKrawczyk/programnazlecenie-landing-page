@@ -6,7 +6,7 @@ import EducationListItem from "~/components/custom/EducationListItem.vue";
 import TechnologyListItem from "~/components/custom/TechnologyListItem.vue";
 
 const props = defineProps<{
-    key: number
+
 }>()
 
 </script>
@@ -14,8 +14,8 @@ const props = defineProps<{
 <template>
     <Drawer>
         <div class="flex flex-col items-center justify-center">
-            <img src="public/user-photo.jpg" alt="Maciej Krawczyk foto" class="w-full">
-            <div class="mt-3">
+            <img src="public/user-photo.jpg" alt="Maciej Krawczyk foto" class="w-11/12">
+            <div class="mt-3 w-11/12">
                 <div class="flex">
                     <h4 class="text-2xl font-semibold mr-4">Maciej Krawczyk</h4>
                     <div class="flex gap-2">
