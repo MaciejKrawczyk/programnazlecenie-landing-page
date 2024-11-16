@@ -8,10 +8,10 @@ import {Button} from "~/components/ui/button";
 </script>
 
 <template>
-    <div class="flex justify-center items-center">
+    <div class="flex justify-center items-center bg-background-image pt-20">
         <main class="flex flex-col w-screen max-w-screen-xl items-center">
             <!---->
-            <h1 class="text-5xl font-semibold">Pomagamy stworzyć Twój system Lepiej</h1>
+            <h1 class="text-5xl font-semibold text-center">Pomagamy stworzyć Twój system Lepiej</h1>
             <div class="my-6">
                 <p class="text-2xl text-center">
                     Jesteśmy programistami z wieloletnim doświadczeniem.
@@ -20,7 +20,7 @@ import {Button} from "~/components/ui/button";
                     Tworzymy rozwiązania IT, które wspierają rozwój i usprawniają procesy.
                 </p>
             </div>
-            <div class="w-1/3 flex justify-around">
+            <div class="flex justify-around gap-7">
                 <Button>Umów spotkanie</Button>
                 <Button variant="outline">Poznaj nas</Button>
             </div>
@@ -56,7 +56,7 @@ import {Button} from "~/components/ui/button";
             </div>
 
             <!---->
-            <h2 class="text-4xl font-semibold my-6 mt-16">Zespół</h2>
+            <h2 class="text-4xl text-center font-semibold my-6 mt-16">Zespół</h2>
             <div>
                 <div class="grid sm:grid-cols-2 gap-10 grid-cols-1">
                     <TeamPerson />
@@ -64,18 +64,17 @@ import {Button} from "~/components/ui/button";
                 </div>
             </div>
             <!---->
-            <h2 class="text-4xl font-semibold my-6 mt-16">Dlaczego my?</h2>
+            <h2 class="text-4xl text-center font-semibold my-6 mt-16">Dlaczego my?</h2>
             <p class="text-xl text-center">
                 Jesteśmy programistami z wieloletnim doświadczeniem.
             </p>
             <Carousel
-                class="relative w-full max-w-sm"
                 :opts="{
                     align: 'start',
                 }"
             >
                 <CarouselContent>
-                    <CarouselItem v-for="(_, index) in 5">
+                    <CarouselItem v-for="(_, index) in 5" class="md:basis-1/2 lg:basis-1/3">
                         <div class="p-1">
                             <Card>
                                 <CardContent class="flex flex-col items-center justify-center p-4">
@@ -96,7 +95,7 @@ import {Button} from "~/components/ui/button";
             </Carousel>
             <!---->
             <div>
-                <h3 class="text-3xl font-semibold mt-16">Umów się na bezpłatną konsultację</h3>
+                <h3 class="text-3xl text-center font-semibold mt-16">Umów się na bezpłatną konsultację</h3>
                 <p class="text-xl text-center">
                     Jesteśmy programistami z wieloletnim doświadczeniem.
                 </p>

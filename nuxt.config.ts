@@ -7,6 +7,7 @@ export default defineNuxtConfig({
         'shadcn-nuxt',
         '@nuxtjs/google-fonts'
     ],
+    css: ['~/src/index.css'],
     shadcn: {
         /**
          * Prefix for all the imported component
@@ -22,5 +23,11 @@ export default defineNuxtConfig({
         families: {
             Geist: true,
         }
-    }
+    },
+    postcss: {
+        plugins: {
+            tailwindcss: {},
+            autoprefixer: {},
+        },
+    },
 })

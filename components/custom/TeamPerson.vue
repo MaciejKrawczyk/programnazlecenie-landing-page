@@ -73,10 +73,6 @@ const props = defineProps<{
                             <div class="flex w-1/3 flex-col">
                                 <h4 class="text-3xl">Maciej Krawczyk</h4>
                                 <p class="text-xl text-gray-600">Full stack developer, Kraków</p>
-                                <p>
-                                    Złotnictwo, systemy produkcyjne, systemy dla kancelarii prawnych, CRM, ERP.
-                                    Złotnictwo, systemy produkcyjne, systemy dla kancelarii prawnych, CRM, ERP
-                                </p>
                                 <Button class="flex justify-between">
                                     <div class="flex">
                                         <Github class="w-4 h-4 mr-2"/>
@@ -94,10 +90,14 @@ const props = defineProps<{
                             </div>
                             <div class="flex flex-1 h-64">
                                 <!--                            <img src="public/user-photo.jpg" alt="Maciej Krawczyk foto1" class="h-64 object-fill">-->
+                                <p>
+                                    Złotnictwo, systemy produkcyjne, systemy dla kancelarii prawnych, CRM, ERP.
+                                    Złotnictwo, systemy produkcyjne, systemy dla kancelarii prawnych, CRM, ERP
+                                </p>
                             </div>
                         </div>
 
-                        <div class="grid grid-cols-2">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 h-[50vh] overflow-auto">
                             <div class="border-r-2 border-gray-200 pl-6 pr-6">
                                 <h5 class="text-2xl font-semibold">Kariera</h5>
                                 <CarrierJobListItem class="my-2"/>
