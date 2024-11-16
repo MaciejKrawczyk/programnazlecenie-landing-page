@@ -67,58 +67,33 @@ const props = defineProps<{}>()
             <DrawerContent class="bg-gray-100">
                 <div class="flex justify-center items-center">
                     <div class="flex flex-col w-screen max-w-screen-xl items-center">
-                        <div class="flex p-3">
-                            <div>
-                                <h4 class="text-3xl">Maciej Krawczyk</h4>
-                                <p class="text-xl text-gray-600">Full stack developer, Kraków</p>
-                                <p class="my-2">
+                        <div class="p-3">
+                            <div class="flex justify-center items-center flex-col">
+                                <h4 class="text-2xl">Maciej Krawczyk</h4>
+                                <p class="text-lg text-gray-600">Full stack developer, Kraków</p>
+                                <p class="my-2 w-11/12 text-center">
                                     Złotnictwo, systemy produkcyjne, systemy dla
                                     kancelarii prawnych, CRM, ERP.
                                     Złotnictwo, systemy produkcyjne, systemy dla
                                     kancelarii prawnych, CRM, ERP
                                 </p>
-                                <div class="flex gap-4 my-4">
+                                <div class="flex gap-4 my-4 w-11/12 justify-center">
                                     <Button class="flex justify-between">
                                         <div class="flex">
                                             <Github class="w-4 h-4 mr-2"/>
-                                            @MaciejKrawczyk
+                                            @Github
                                         </div>
-                                        <SquareArrowOutUpRight class="w-4 h-4"/>
+                                        <SquareArrowOutUpRight class="w-4 h-4 ml-1"/>
                                     </Button>
                                     <Button class="flex justify-between">
                                         <div class="flex">
                                             <Linkedin class="w-4 h-4 mr-2"/>
-                                            @maciej-krawczyk-the-programmer
+                                            @Linkedin
                                         </div>
-                                        <SquareArrowOutUpRight class="w-4 h-4"/>
+                                        <SquareArrowOutUpRight class="w-4 h-4 ml-1"/>
                                     </Button>
                                 </div>
                             </div>
-                            <!--                            <div class="flex w-1/3 flex-col">-->
-                            <!--                                <h4 class="text-3xl">Maciej Krawczyk</h4>-->
-                            <!--                                <p class="text-xl text-gray-600">Full stack developer, Kraków</p>-->
-                            <!--                                <Button class="flex justify-between">-->
-                            <!--                                    <div class="flex">-->
-                            <!--                                        <Github class="w-4 h-4 mr-2"/>-->
-                            <!--                                        @MaciejKrawczyk-->
-                            <!--                                    </div>-->
-                            <!--                                    <SquareArrowOutUpRight class="w-4 h-4"/>-->
-                            <!--                                </Button>-->
-                            <!--                                <Button class="flex justify-between">-->
-                            <!--                                    <div class="flex">-->
-                            <!--                                        <Linkedin class="w-4 h-4 mr-2"/>-->
-                            <!--                                        @maciej-krawczyk-the-programmer-->
-                            <!--                                    </div>-->
-                            <!--                                    <SquareArrowOutUpRight class="w-4 h-4"/>-->
-                            <!--                                </Button>-->
-                            <!--                            </div>-->
-                            <!--                            <div class="flex flex-1 h-64">-->
-                            <!--                                &lt;!&ndash;                            <img src="public/user-photo.jpg" alt="Maciej Krawczyk foto1" class="h-64 object-fill">&ndash;&gt;-->
-                            <!--                                <p>-->
-                            <!--                                    Złotnictwo, systemy produkcyjne, systemy dla kancelarii prawnych, CRM, ERP.-->
-                            <!--                                    Złotnictwo, systemy produkcyjne, systemy dla kancelarii prawnych, CRM, ERP-->
-                            <!--                                </p>-->
-                            <!--                            </div>-->
                         </div>
 
                         <div class="grid grid-cols-1 sm:grid-cols-2 h-[50vh] overflow-auto">
