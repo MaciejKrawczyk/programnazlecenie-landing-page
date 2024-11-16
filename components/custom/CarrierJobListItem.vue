@@ -18,7 +18,7 @@ import {GraduationCap} from "lucide-vue-next";
             <span>2024 - obecnie</span>
         </div>
         <p class="italic text-gray-600 mb-3 mt-1">Złotnictwo, systemy produkcyjne, systemy dla kancelarii prawnych, CRM, ERP</p>
-        <ul class="list-disc">
+        <ul class="list-disc ml-8">
             <li>Złotnictwo, systemy produkcyjne, systemy dla kancelarii prawnych, CRM, ERP</li>
             <li>Złotnictwo, systemy produkcyjne, systemy dla kancelarii prawnych, CRM, ERP</li>
             <li>Złotnictwo, systemy produkcyjne, systemy dla kancelarii prawnych, CRM, ERP</li>
