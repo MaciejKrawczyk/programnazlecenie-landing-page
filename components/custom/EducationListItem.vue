@@ -1,6 +1,15 @@
 <script setup lang="ts">
 
 import {GraduationCap} from "lucide-vue-next";
+
+const props = defineProps<{
+    school: string,
+    location: string,
+    title: string,
+    yearFrom: string,
+    yearTo: string,
+    description: string,
+}>()
 </script>
 
 <template>
@@ -11,13 +20,13 @@ import {GraduationCap} from "lucide-vue-next";
                     <GraduationCap class="w-4 h-4"/>
                 </Button>
                 <div class="flex flex-col">
-                    <p class="font-medium">Prosperitas, Kraków</p>
-                    <span class="font-light">Full stack developer</span>
+                    <p class="font-medium">{{ props.school }}, {{ props.location }}</p>
+                    <span class="font-light">{{ props.title }}</span>
                 </div>
             </div>
-            <span>2024 - obecnie</span>
+            <span>{{ props.yearFrom }} - {{ props.yearTo }}</span>
         </div>
-        <p class="italic text-gray-600 mb-3 mt-1">Złotnictwo, systemy produkcyjne, systemy dla kancelarii prawnych, CRM, ERP</p>
+        <p class="italic text-gray-600 mb-3 mt-1">{{ props.description }}</p>
     </div>
 </template>
 

@@ -11,7 +11,7 @@ const props = defineProps<{
 <template>
     <div class="flex justify-center items-center">
         <Button size="icon" class="mr-3">
-            <GraduationCap class="w-4 h-4"/>
+            <slot name="icon"></slot>
         </Button>
         <div class="flex flex-col">
             <p class="font-medium">{{ props.mainText }}</p>
