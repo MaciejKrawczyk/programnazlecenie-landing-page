@@ -8,6 +8,7 @@ import {Dialog, DialogContent, DialogFooter, DialogHeader, DialogTitle, DialogTr
 import {Check, Copy} from "lucide-vue-next";
 import {Button} from "~/components/ui/button";
 import {DialogClose} from "radix-vue";
+import {useClipboard} from "@vueuse/core";
 
 
 const carouselData = [
@@ -48,6 +49,8 @@ const carouselData = [
     },
 ]
 
+const source = ref('kontakt@programnazlecenie.pl')
+const { text, copy, copied } = useClipboard({ source })
 </script>
 
 <template>
