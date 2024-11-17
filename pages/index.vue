@@ -7,6 +7,9 @@ import {Card, CardContent} from "~/components/ui/card";
 import {Button} from "~/components/ui/button";
 import TeamPersonDrawer from "~/components/custom/TeamPersonDrawer.vue";
 import ShortInfoItem from "~/components/custom/ShortInfoItem.vue";
+import CarrierJobListItem from "~/components/custom/CarrierJobListItem.vue";
+import EducationListItem from "~/components/custom/EducationListItem.vue";
+import TechnologyListItem from "~/components/custom/TechnologyListItem.vue";
 </script>
 
 <template>
@@ -94,7 +97,42 @@ import ShortInfoItem from "~/components/custom/ShortInfoItem.vue";
                             </ShortInfoItem>
                         </template>
                         <template #drawer>
-                            <TeamPersonDrawer/>
+                            <TeamPersonDrawer
+                                description="Złotnictwo, systemy produkcyjne, systemy dla kancelarii prawnych, CRM, ERP"
+                                full-name="Maciej Krawczyk"
+                                github-link="https://github.com/MaciejKrawczyk"
+                                job-title="Full stack developer"
+                                linked-in-link="https://www.linkedin.com/in/maciej-krawczyk-the-programmer/"
+                                location="Kraków"
+                            >
+                                <template #carrier>
+                                    <CarrierJobListItem class="my-2"/>
+                                    <CarrierJobListItem class="my-2"/>
+                                    <CarrierJobListItem class="my-2"/>
+                                </template>
+                                <template #education>
+                                    <EducationListItem class="my-2"/>
+                                    <EducationListItem class="my-2"/>
+                                </template>
+                                <template #technology>
+                                    <div>
+                                        <TechnologyListItem main-text="Django" sub-text="1 rok"/>
+                                        <TechnologyListItem main-text="Django" sub-text="1 rok"/>
+                                        <TechnologyListItem main-text="Django" sub-text="1 rok"/>
+                                        <TechnologyListItem main-text="Django" sub-text="1 rok"/>
+                                        <TechnologyListItem main-text="Django" sub-text="1 rok"/>
+                                        <TechnologyListItem main-text="Django" sub-text="1 rok"/>
+                                    </div>
+                                    <div>
+                                        <TechnologyListItem main-text="Django" sub-text="1 rok"/>
+                                        <TechnologyListItem main-text="Django" sub-text="1 rok"/>
+                                        <TechnologyListItem main-text="Django" sub-text="1 rok"/>
+                                        <TechnologyListItem main-text="Django" sub-text="1 rok"/>
+                                        <TechnologyListItem main-text="Django" sub-text="1 rok"/>
+                                        <TechnologyListItem main-text="Django" sub-text="1 rok"/>
+                                    </div>
+                                </template>
+                            </TeamPersonDrawer>
                         </template>
                     </TeamPerson>
                     <!---->
@@ -131,7 +169,42 @@ import ShortInfoItem from "~/components/custom/ShortInfoItem.vue";
                             </ShortInfoItem>
                         </template>
                         <template #drawer>
-                            <TeamPersonDrawer/>
+                            <TeamPersonDrawer
+                                description="Złotnictwo, systemy produkcyjne, systemy dla kancelarii prawnych, CRM, ERP"
+                                full-name="Maciej Krawczyk"
+                                github-link="https://github.com/MaciejKrawczyk"
+                                job-title="Full stack developer"
+                                linked-in-link="https://www.linkedin.com/in/maciej-krawczyk-the-programmer/"
+                                location="Kraków"
+                            >
+                                <template #carrier>
+                                    <CarrierJobListItem class="my-2"/>
+                                    <CarrierJobListItem class="my-2"/>
+                                    <CarrierJobListItem class="my-2"/>
+                                </template>
+                                <template #education>
+                                    <EducationListItem class="my-2"/>
+                                    <EducationListItem class="my-2"/>
+                                </template>
+                                <template #technology>
+                                    <div>
+                                        <TechnologyListItem main-text="Django" sub-text="1 rok"/>
+                                        <TechnologyListItem main-text="Django" sub-text="1 rok"/>
+                                        <TechnologyListItem main-text="Django" sub-text="1 rok"/>
+                                        <TechnologyListItem main-text="Django" sub-text="1 rok"/>
+                                        <TechnologyListItem main-text="Django" sub-text="1 rok"/>
+                                        <TechnologyListItem main-text="Django" sub-text="1 rok"/>
+                                    </div>
+                                    <div>
+                                        <TechnologyListItem main-text="Django" sub-text="1 rok"/>
+                                        <TechnologyListItem main-text="Django" sub-text="1 rok"/>
+                                        <TechnologyListItem main-text="Django" sub-text="1 rok"/>
+                                        <TechnologyListItem main-text="Django" sub-text="1 rok"/>
+                                        <TechnologyListItem main-text="Django" sub-text="1 rok"/>
+                                        <TechnologyListItem main-text="Django" sub-text="1 rok"/>
+                                    </div>
+                                </template>
+                            </TeamPersonDrawer>
                         </template>
                     </TeamPerson>
                 </div>
