@@ -1,10 +1,12 @@
 <script setup lang="ts">
 import IconButton from "~/components/custom/IconButton.vue";
-import {Factory, Gem, HandCoins, KeySquare, Scale, Truck} from "lucide-vue-next";
+import {Factory, Gavel, Gem, GraduationCap, HandCoins, KeySquare, Scale, Truck} from "lucide-vue-next";
 import TeamPerson from "~/components/custom/TeamPerson.vue";
 import {Carousel, CarouselContent, CarouselItem} from "~/components/ui/carousel";
 import {Card, CardContent} from "~/components/ui/card";
 import {Button} from "~/components/ui/button";
+import TeamPersonDrawer from "~/components/custom/TeamPersonDrawer.vue";
+import ShortInfoItem from "~/components/custom/ShortInfoItem.vue";
 </script>
 
 <template>
@@ -27,7 +29,7 @@ import {Button} from "~/components/ui/button";
             <!---->
 
             <div class="my-6">
-                <div class="sm:grid sm:grid-cols-4 mb-3">
+                <div class="flex flex-wrap justify-center gap-4 mb-3">
                     <IconButton text="Produkcja">
                         <Factory class="w-4 h-4"/>
                     </IconButton>
@@ -44,7 +46,7 @@ import {Button} from "~/components/ui/button";
                         <Gem class="w-4 h-4"/>
                     </IconButton>
                 </div>
-                <div class="sm:grid sm:grid-cols-2">
+                <div class="flex flex-wrap justify-center gap-4">
                     <IconButton text="Przemysł Motoryzacyjny">
                         <KeySquare class="w-4 h-4"/>
                     </IconButton>
@@ -59,8 +61,79 @@ import {Button} from "~/components/ui/button";
             <h2 class="text-4xl text-center font-semibold my-6 mt-16">Zespół</h2>
             <div>
                 <div class="grid sm:grid-cols-2 gap-10 grid-cols-1">
-                    <TeamPerson />
-                    <TeamPerson />
+                    <TeamPerson
+                        description="Złotnictwo, systemy produkcyjne, systemy dla kancelarii prawnych, CRM, ERP"
+                        full-name="Maciej Krawczyk"
+                        github-link="https://github.com/MaciejKrawczyk"
+                        job-title="Full stack developer"
+                        linked-in-link="https://www.linkedin.com/in/maciej-krawczyk-the-programmer/"
+                    >
+                        <template #short-info>
+                            <ShortInfoItem
+                                company="Prosperitas"
+                                job-title="Full stack developer"
+                                location="Kraków"
+                                year-from="2024"
+                                year-to="obecnie"
+                            >
+                                <template #icon>
+                                    <Gavel class="w-4 h-4"/>
+                                </template>
+                            </ShortInfoItem>
+                            <hr class="my-4 border-gray-600">
+                            <ShortInfoItem
+                                company="Uniwersytet Jagielloński"
+                                job-title="Informatyka Stosowana, Mgr"
+                                location="Kraków"
+                                year-from="2024"
+                                year-to="2026"
+                            >
+                                <template #icon>
+                                    <GraduationCap class="w-4 h-4"/>
+                                </template>
+                            </ShortInfoItem>
+                        </template>
+                        <template #drawer>
+                            <TeamPersonDrawer/>
+                        </template>
+                    </TeamPerson>
+                    <!---->
+                    <TeamPerson
+                        description="Złotnictwo, systemy produkcyjne, systemy dla kancelarii prawnych, CRM, ERP"
+                        full-name="Maciej Krawczyk"
+                        github-link="https://github.com/MaciejKrawczyk"
+                        job-title="Full stack developer"
+                        linked-in-link="https://www.linkedin.com/in/maciej-krawczyk-the-programmer/"
+                    >
+                        <template #short-info>
+                            <ShortInfoItem
+                                company="Prosperitas"
+                                job-title="Full stack developer"
+                                location="Kraków"
+                                year-from="2024"
+                                year-to="obecnie"
+                            >
+                                <template #icon>
+                                    <Gavel class="w-4 h-4"/>
+                                </template>
+                            </ShortInfoItem>
+                            <hr class="my-4 border-gray-600">
+                            <ShortInfoItem
+                                company="Uniwersytet Jagielloński"
+                                job-title="Informatyka Stosowana, Mgr"
+                                location="Kraków"
+                                year-from="2024"
+                                year-to="2026"
+                            >
+                                <template #icon>
+                                    <GraduationCap class="w-4 h-4"/>
+                                </template>
+                            </ShortInfoItem>
+                        </template>
+                        <template #drawer>
+                            <TeamPersonDrawer/>
+                        </template>
+                    </TeamPerson>
                 </div>
             </div>
             <!---->
@@ -69,6 +142,7 @@ import {Button} from "~/components/ui/button";
                 Jesteśmy programistami z wieloletnim doświadczeniem.
             </p>
             <Carousel
+                class="w-[80vw] max-w-screen-xl"
                 :opts="{
                     align: 'start',
                 }"
