@@ -81,7 +81,7 @@ const carouselData = [
                         <DialogTrigger as-child>
                             <Button>Umów spotkanie</Button>
                         </DialogTrigger>
-                        <Button variant="outline">Poznaj nas</Button>
+<!--                        <Button variant="outline">Poznaj nas</Button>-->
                     </div>
                     <DialogContent class="sm:max-w-[425px]">
                         <DialogHeader>
