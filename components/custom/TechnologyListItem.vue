@@ -9,7 +9,7 @@ const props = defineProps<{
 </script>
 
 <template>
-    <div class="flex justify-center items-center">
+    <div class="flex items-center w-52">
         <Button size="icon" class="mr-3">
             <slot name="icon"></slot>
         </Button>
