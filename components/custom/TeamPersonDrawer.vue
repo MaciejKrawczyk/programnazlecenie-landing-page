@@ -1,7 +1,7 @@
 <script setup lang="ts">
 
-import {DrawerContent} from "~/components/ui/drawer";
-import {Github, Linkedin, SquareArrowOutUpRight} from "lucide-vue-next";
+import {DrawerContent, DrawerClose} from "~/components/ui/drawer";
+import {Github, Linkedin, SquareArrowOutUpRight, X} from "lucide-vue-next";
 
 const props = defineProps<{
     linkedInLink: string,
@@ -18,6 +18,11 @@ const props = defineProps<{
         <div class="flex justify-center items-center h-full pb-10">
             <div class="flex flex-col w-screen max-w-screen-xl items-center h-full">
                 <div class="p-3">
+                    <DrawerClose as-child>
+                        <Button variant="outline" class="absolute right-4 top-4">
+                            <X class="w-4 h-4"/>
+                        </Button>
+                    </DrawerClose>
                     <div class="flex justify-center items-center flex-col">
                         <h4 class="text-2xl">{{ props.fullName }}</h4>
                         <p class="text-lg text-gray-600">{{ props.jobTitle }}, {{ props.location }}</p>
