@@ -8,6 +8,7 @@ const props = defineProps<{
     fullName: string,
     jobTitle: string,
     description: string,
+    img: string,
 }>()
 
 </script>
@@ -15,7 +16,7 @@ const props = defineProps<{
 <template>
     <Drawer>
         <div class="flex flex-col items-center justify-center">
-            <img src="public/user-photo.jpg" alt="Maciej Krawczyk foto" class="w-11/12">
+            <img :src="props.img" alt="Foto" class="w-11/12 h-[625px] object-cover">
             <div class="mt-3 w-11/12">
                 <div class="flex">
                     <h4 class="text-2xl font-semibold mr-4">{{ props.fullName }}</h4>
@@ -37,7 +38,7 @@ const props = defineProps<{
                 <div>
                     <slot name="short-info"/>
                     <DrawerTrigger as-child class="my-6">
-                        <Button>Zobacz wszystko</Button>
+                        <Button>Zobacz cały profil</Button>
                     </DrawerTrigger>
                 </div>
             </div>

@@ -23,11 +23,13 @@ import TechnologyListItem from "~/components/custom/TechnologyListItem.vue";
 import TeamPersonDrawer from "~/components/custom/TeamPersonDrawer.vue";
 import EducationListItem from "~/components/custom/EducationListItem.vue";
 import ShortInfoItem from "~/components/custom/ShortInfoItem.vue";
+import RobertFoto from "/public/robert1.jpg";
 </script>
 
 
 <template>
     <TeamPerson
+        :img="RobertFoto"
         description="Tworzenie aplikacji i serwisów dla sektora transportowego oraz produkcyjnego"
         full-name="Robert Jureczko"
         github-link="https://github.com/RoobyJ"

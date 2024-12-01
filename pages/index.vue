@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import StelmachLogo from "/public/logo-stelmach.svg";
+
 import TeamPersonMaciejKrawczyk from "~/components/custom/TeamPersonMaciejKrawczyk.vue";
 import TeamPersonRobertJureczko from "~/components/custom/TeamPersonRobertJureczko.vue";
 import CompanyProjectsCarousel from "~/components/custom/CompanyProjectsCarousel.vue";

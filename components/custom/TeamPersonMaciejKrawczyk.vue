@@ -21,10 +21,12 @@ import TechnologyListItem from "~/components/custom/TechnologyListItem.vue";
 import TeamPersonDrawer from "~/components/custom/TeamPersonDrawer.vue";
 import EducationListItem from "~/components/custom/EducationListItem.vue";
 import ShortInfoItem from "~/components/custom/ShortInfoItem.vue";
+import MaciejFoto from "/public/maciej1.jpg";
 </script>
 
 <template>
     <TeamPerson
+        :img="MaciejFoto"
         description="Złotnictwo, systemy produkcyjne, systemy dla kancelarii prawnych, CRM, ERP"
         full-name="Maciej Krawczyk"
         github-link="https://github.com/MaciejKrawczyk"
@@ -187,59 +189,59 @@ import ShortInfoItem from "~/components/custom/ShortInfoItem.vue";
                                 <IconBrandDjango size="20" :strokeWidth="1"/>
                             </template>
                         </TechnologyListItem>
-                        <TechnologyListItem main-text="Django" sub-text="1 rok">
+                        <TechnologyListItem main-text="React" sub-text="2 lata">
                             <template #icon>
                                 <IconBrandReact size="20" :strokeWidth="1"/>
                             </template>
                         </TechnologyListItem>
-                        <TechnologyListItem main-text="Django" sub-text="1 rok">
+                        <TechnologyListItem main-text="Next.js" sub-text="2 lata">
                             <template #icon>
                                 <IconBrandNextjs size="20" :strokeWidth="1"/>
                             </template>
                         </TechnologyListItem>
-                        <TechnologyListItem main-text="Django" sub-text="1 rok">
+                        <TechnologyListItem main-text="Node" sub-text="2 lata">
                             <template #icon>
                                 <IconBrandNodejs size="20" :strokeWidth="1"/>
                             </template>
                         </TechnologyListItem>
-                        <TechnologyListItem main-text="Django" sub-text="1 rok">
+                        <TechnologyListItem main-text="HTML" sub-text="4 lata">
                             <template #icon>
                                 <IconBrandHtml5 size="20" :strokeWidth="1"/>
                             </template>
                         </TechnologyListItem>
-                        <TechnologyListItem main-text="Django" sub-text="1 rok">
+                        <TechnologyListItem main-text="C#" sub-text="1 rok">
                             <template #icon>
                                 <IconBrandCSharp size="20" :strokeWidth="1"/>
                             </template>
                         </TechnologyListItem>
                     </div>
                     <div>
-                        <TechnologyListItem main-text="Django" sub-text="1 rok">
+                        <TechnologyListItem main-text="CSS, SCSS" sub-text="3 lata">
                             <template #icon>
                                 <IconBrandCss3 size="20" :strokeWidth="1"/>
                             </template>
                         </TechnologyListItem>
-                        <TechnologyListItem main-text="Django" sub-text="1 rok">
+                        <TechnologyListItem main-text="Nuxt" sub-text="1 rok">
                             <template #icon>
                                 <IconBrandNuxt size="20" :strokeWidth="1"/>
                             </template>
                         </TechnologyListItem>
-                        <TechnologyListItem main-text="Django" sub-text="1 rok">
+                        <TechnologyListItem main-text="Postgres" sub-text="1 rok">
                             <template #icon>
                                 <IconDatabase size="20" :strokeWidth="1"/>
                             </template>
                         </TechnologyListItem>
-                        <TechnologyListItem main-text="Django" sub-text="1 rok">
+                        <TechnologyListItem main-text="SQL" sub-text="1 rok">
                             <template #icon>
                                 <IconSql size="20" :strokeWidth="1"/>
                             </template>
                         </TechnologyListItem>
-                        <TechnologyListItem main-text="Django" sub-text="1 rok">
+                        <TechnologyListItem main-text="Vue" sub-text="1 rok">
                             <template #icon>
                                 <IconBrandVue size="20" :strokeWidth="1"/>
                             </template>
                         </TechnologyListItem>
-                        <TechnologyListItem main-text="Django" sub-text="1 rok">
+                        <TechnologyListItem main-text="Python" sub-text="1 rok">
                             <template #icon>
                                 <IconBrandPython size="20" :strokeWidth="1"/>
                             </template>
