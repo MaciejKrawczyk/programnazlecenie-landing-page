@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import StelmachLogo from "/public/logo-stelmach.svg";
+import ProsperitasLogo from "/public/prosperitas.svg";
+import CertusoftLogo from "/public/certusoft-logo.webp";
 
 import TeamPersonMaciejKrawczyk from "~/components/custom/TeamPersonMaciejKrawczyk.vue";
 import TeamPersonRobertJureczko from "~/components/custom/TeamPersonRobertJureczko.vue";
@@ -15,43 +17,50 @@ import {useClipboard} from "@vueuse/core";
 const carouselData = [
     {
         company: "PZ Stelmach, Opole",
-        title: "Automatyzacja pracy pracowników i zarządzanie zasobami",
-        description: "Złotnictwo, systemy produkcyjne, systemy dla kancelarii prawnych, CRM, ERP",
+        title: "Automatyzacja pracy pracowników",
+        description: "Oprogramowanie ułatwiający rozliczanie się pracowników ze swojej pracy, zliczanie ilości elementów, pomiar wydajności i integracja z wagami czy skanerami",
         image: StelmachLogo,
         alt: "PZ Stelmach logo",
     },
     {
+        company: "Kancelaria Prosperitas, Kraków",
+        title: "Usprawnienie pracy prawników w kancelarii",
+        description: "Rozwój oprogramowania wewnątrzfirmowego do zarządzania sprawami i automatycznego generowania dokumentów tj. pozwy, reklamacje, pisma procesowe",
+        image: ProsperitasLogo,
+        alt: "Prosperitas logo",
+    },
+    {
+        company: "Certusoft, Warszawa",
+        title: "Rozwój systemu ERP",
+        description: "Utrzymanie i wdrażanie najnowszych rozwiązań w istniejącym systemie ERP i integracja z nim innych serwisów",
+        image: CertusoftLogo,
+        alt: "Certusoft logo",
+    },
+    {
+        company: "Kancelaria Prosperitas, Kraków",
+        title: "Automatyzacja rozliczeń finansowych z klientami",
+        description: "Automatyczne wystawianie faktur, wysyłania przypomnień, proformy, paragony",
+        image: ProsperitasLogo,
+        alt: "Prosperitas logo",
+    },
+    {
         company: "PZ Stelmach, Opole",
-        title: "Automatyzacja pracy pracowników i zarządzanie zasobami",
-        description: "Złotnictwo, systemy produkcyjne, systemy dla kancelarii prawnych, CRM, ERP",
+        title: "Zarządzanie zasobami",
+        description: "Oprogramowanie stworzone na podstawie instniejącej szafy narzędzi, służące do przetrzymywania i sortowania i ogólnego zarządzania zasobami.",
         image: StelmachLogo,
         alt: "PZ Stelmach logo",
     },
     {
-        company: "PZ Stelmach, Opole",
-        title: "Automatyzacja pracy pracowników i zarządzanie zasobami",
-        description: "Złotnictwo, systemy produkcyjne, systemy dla kancelarii prawnych, CRM, ERP",
-        image: StelmachLogo,
-        alt: "PZ Stelmach logo",
-    },
-    {
-        company: "PZ Stelmach, Opole",
-        title: "Automatyzacja pracy pracowników i zarządzanie zasobami",
-        description: "Złotnictwo, systemy produkcyjne, systemy dla kancelarii prawnych, CRM, ERP",
-        image: StelmachLogo,
-        alt: "PZ Stelmach logo",
-    },
-    {
-        company: "PZ Stelmach, Opole",
-        title: "Automatyzacja pracy pracowników i zarządzanie zasobami",
-        description: "Złotnictwo, systemy produkcyjne, systemy dla kancelarii prawnych, CRM, ERP",
-        image: StelmachLogo,
-        alt: "PZ Stelmach logo",
+        company: "Kancelaria Prosperitas, Kraków",
+        title: "Rozwój i utrzymanie systemu CRM",
+        description: "Rozwój istniejące systemu oraz zarządzanie bazą setek tysięcy leadów.",
+        image: ProsperitasLogo,
+        alt: "Prosperitas logo",
     },
 ]
 
 const source = ref('kontakt@programnazlecenie.pl')
-const { text, copy, copied } = useClipboard({ source })
+const {text, copy, copied} = useClipboard({source})
 </script>
 
 <template>
@@ -69,7 +78,7 @@ const { text, copy, copied } = useClipboard({ source })
                 </div>
             </div>
             <!---->
-            <h2 class="text-4xl text-center font-semibold my-6 mt-16">Dlaczego my?</h2>
+            <h2 class="text-4xl text-center font-semibold my-6 mt-16">Nasza Praca</h2>
             <p class="text-xl text-center mb-6">
                 W takich projektach braliśmy udział i aktywnie rozwijaliśmy
             </p>
@@ -85,22 +94,23 @@ const { text, copy, copied } = useClipboard({ source })
                         <DialogTrigger as-child>
                             <Button>Umów spotkanie</Button>
                         </DialogTrigger>
-<!--                        <Button variant="outline">Poznaj nas</Button>-->
+                        <!--                        <Button variant="outline">Poznaj nas</Button>-->
                     </div>
                     <DialogContent class="sm:max-w-[425px]">
                         <DialogHeader>
                             <DialogTitle class="text-center">Napisz na naszego Emaila:</DialogTitle>
                             <div class="flex justify-center items-center gap-4">
-                                <p class="text-xl font-bold">{{source}}</p>
+                                <p class="text-xl font-bold">{{ source }}</p>
                                 <Button variant="secondary" @click="copy(source)">
                                     <Copy class="w-4 h-4" v-if="!copied"/>
-                                    <Check v-if="copied" class="w-4 h-4" />
+                                    <Check v-if="copied" class="w-4 h-4"/>
                                 </Button>
                             </div>
                         </DialogHeader>
                         <div class="grid gap-4 py-4">
                             <p>
-                                Umówimy się wówczas na 15-to minutowe spotkanie, na którym porozmawiamy o Twoich oczekiwaniach.
+                                Umówimy się wówczas na 15-to minutowe spotkanie, na którym porozmawiamy o Twoich
+                                oczekiwaniach.
                                 W treści maila zamieść takie informacje jak:
                             </p>
                             <ul class="list-disc ml-8">

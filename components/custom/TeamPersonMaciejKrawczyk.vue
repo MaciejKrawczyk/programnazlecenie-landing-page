@@ -1,6 +1,6 @@
 <script setup lang="ts">
 
-import {Gavel, GraduationCap, HandCoins, Gem} from "lucide-vue-next";
+import {Gavel, Gem, GraduationCap, HandCoins} from "lucide-vue-next";
 import {
     IconBrandCSharp,
     IconBrandCss3,
@@ -85,14 +85,17 @@ import MaciejFoto from "/public/maciej1.jpg";
                                 <li><b>Rozwój systemu CRM firmy:</b> Praca nad modułami wspierającymi kluczowe obszary
                                     działalności, takie jak sprzedaż, finanse oraz telemarketing.
                                 </li>
-                                <li><b>Wsparcie dla działu prawnego:</b> Wdrażanie nowych funkcjonalności usprawniających
+                                <li><b>Wsparcie dla działu prawnego:</b> Wdrażanie nowych funkcjonalności
+                                    usprawniających
                                     codzienną pracę działu prawnego, dostosowanych do specyficznych wymagań organizacji
                                     tj. tworzenie dokumentów i wyliczeń.
                                 </li>
-                                <li><b>Stworzenie i rozwój architektury frontendu:</b> Projektowanie oraz rozwój architektury
+                                <li><b>Stworzenie i rozwój architektury frontendu:</b> Projektowanie oraz rozwój
+                                    architektury
                                     frontendu aplikacji, co przyczyniło się do poprawy wydajności i czytelności kodu.
                                 </li>
-                                <li><b>Implementacja modułu finansowego:</b> Udział w procesie wdrażania funkcjonalności takich
+                                <li><b>Implementacja modułu finansowego:</b> Udział w procesie wdrażania funkcjonalności
+                                    takich
                                     jak faktury, faktury korekcyjne, paragony oraz zarządzanie kontami SIMP.
                                 </li>
                             </ul>
@@ -112,9 +115,16 @@ import MaciejFoto from "/public/maciej1.jpg";
                         </template>
                         <template #contribution>
                             <ul class="list-disc ml-8">
-                                <li><b>Utrzymanie i rozwiązywanie problemów systemu ERP:</b> Zapewnienie ciągłości działania systemu ERP, kluczowego dla sprawnego funkcjonowania procesów biznesowych.</li>
-                                <li><b>Aktualizacje i monitoring stron internetowych:</b> Regularne aktualizowanie i monitorowanie stron internetowych klientów w celu zapewnienia bezpieczeństwa i pełnej funkcjonalności.</li>
-                                <li><b>Współpraca nad ulepszaniem systemów:</b> Ścisła współpraca z członkami zespołu przy wdrażaniu ulepszeń i aktualizacji systemów ERP.</li>
+                                <li><b>Utrzymanie i rozwiązywanie problemów systemu ERP:</b> Zapewnienie ciągłości
+                                    działania systemu ERP, kluczowego dla sprawnego funkcjonowania procesów biznesowych.
+                                </li>
+                                <li><b>Aktualizacje i monitoring stron internetowych:</b> Regularne aktualizowanie i
+                                    monitorowanie stron internetowych klientów w celu zapewnienia bezpieczeństwa i
+                                    pełnej funkcjonalności.
+                                </li>
+                                <li><b>Współpraca nad ulepszaniem systemów:</b> Ścisła współpraca z członkami zespołu
+                                    przy wdrażaniu ulepszeń i aktualizacji systemów ERP.
+                                </li>
                             </ul>
                         </template>
                     </CarrierJobListItem>
@@ -132,10 +142,19 @@ import MaciejFoto from "/public/maciej1.jpg";
                         </template>
                         <template #contribution>
                             <ul class="list-disc ml-8">
-                                <li><b>Tworzenie i utrzymanie serwera produkcyjnego:</b> Zarządzanie środowiskiem produkcyjnym w celu zapewnienia stabilności i dostępności systemów.</li>
-                                <li><b>Zarządzanie bazą danych:</b> Utrzymanie, optymalizacja i administracja bazami danych dla zapewnienia wydajności oraz bezpieczeństwa danych.</li>
-                                <li><b>Projektowanie i wdrażanie nowych rozwiązań:</b> Tworzenie, rozwój i wdrażanie nowych funkcjonalności oraz rozwiązań wspierających procesy biznesowe.</li>
-                                <li><b>Automatyzacja procesów produkcyjnych:</b> Opracowanie narzędzi i skryptów automatyzujących kluczowe procesy, zwiększających wydajność i redukujących błędy operacyjne.</li>
+                                <li><b>Tworzenie i utrzymanie serwera produkcyjnego:</b> Zarządzanie środowiskiem
+                                    produkcyjnym w celu zapewnienia stabilności i dostępności systemów.
+                                </li>
+                                <li><b>Zarządzanie bazą danych:</b> Utrzymanie, optymalizacja i administracja bazami
+                                    danych dla zapewnienia wydajności oraz bezpieczeństwa danych.
+                                </li>
+                                <li><b>Projektowanie i wdrażanie nowych rozwiązań:</b> Tworzenie, rozwój i wdrażanie
+                                    nowych funkcjonalności oraz rozwiązań wspierających procesy biznesowe.
+                                </li>
+                                <li><b>Automatyzacja procesów produkcyjnych:</b> Opracowanie narzędzi i skryptów
+                                    automatyzujących kluczowe procesy, zwiększających wydajność i redukujących błędy
+                                    operacyjne.
+                                </li>
                             </ul>
                         </template>
                     </CarrierJobListItem>
@@ -153,11 +172,26 @@ import MaciejFoto from "/public/maciej1.jpg";
                         </template>
                         <template #contribution>
                             <ul class="list-disc ml-8">
-                                <li><b>Tworzenie wysokiej jakości modeli 3D:</b> Projektowanie precyzyjnych i realistycznych modeli 3D, które przedstawiają personalizowaną biżuterię, dbając o szczegóły i estetykę.</li>
-                                <li><b>Wdrożenie wizualizacji w czasie rzeczywistym:</b> Integracja technologii umożliwiającej użytkownikom oglądanie i interakcję z projektami biżuterii w czasie rzeczywistym, zapewniając wciągające doświadczenie zakupowe.</li>
-                                <li><b>Rozwój responsywnych stron internetowych:</b> Budowa responsywnych i intuicyjnych stron internetowych z narzędziami do personalizacji biżuterii, dostosowanymi do specyficznych potrzeb użytkowników.</li>
-                                <li><b>Integracja z platformami e-commerce:</b> Płynne połączenie rozwiązania z platformami e-commerce w celu usprawnienia procesów zakupowych i poprawy doświadczenia użytkownika.</li>
-                                <li><b>Ulepszenie doświadczenia zakupów online:</b> Wykorzystanie zaawansowanych technologii w celu zrewolucjonizowania sposobu projektowania i zakupu biżuterii, łącząc personalizację z wygodą.</li>
+                                <li><b>Tworzenie wysokiej jakości modeli 3D:</b> Projektowanie precyzyjnych i
+                                    realistycznych modeli 3D, które przedstawiają personalizowaną biżuterię, dbając o
+                                    szczegóły i estetykę.
+                                </li>
+                                <li><b>Wdrożenie wizualizacji w czasie rzeczywistym:</b> Integracja technologii
+                                    umożliwiającej użytkownikom oglądanie i interakcję z projektami biżuterii w czasie
+                                    rzeczywistym, zapewniając wciągające doświadczenie zakupowe.
+                                </li>
+                                <li><b>Rozwój responsywnych stron internetowych:</b> Budowa responsywnych i intuicyjnych
+                                    stron internetowych z narzędziami do personalizacji biżuterii, dostosowanymi do
+                                    specyficznych potrzeb użytkowników.
+                                </li>
+                                <li><b>Integracja z platformami e-commerce:</b> Płynne połączenie rozwiązania z
+                                    platformami e-commerce w celu usprawnienia procesów zakupowych i poprawy
+                                    doświadczenia użytkownika.
+                                </li>
+                                <li><b>Ulepszenie doświadczenia zakupów online:</b> Wykorzystanie zaawansowanych
+                                    technologii w celu zrewolucjonizowania sposobu projektowania i zakupu biżuterii,
+                                    łącząc personalizację z wygodą.
+                                </li>
                             </ul>
                         </template>
                     </CarrierJobListItem>

@@ -2,20 +2,15 @@
 
 import {CodeXml, Gavel, GraduationCap} from "lucide-vue-next";
 import {
+    IconArrowDownCircle,
     IconBrandCSharp,
     IconBrandCss3,
-    IconBrandDjango,
     IconBrandHtml5,
-    IconBrandNextjs,
-    IconBrandNodejs,
-    IconBrandNuxt,
     IconBrandPython,
-    IconBrandReact,
     IconBrandVue,
-    IconDatabase,
-    IconSql,
     IconComponents,
-    IconArrowDownCircle
+    IconDatabase,
+    IconSql
 } from "@tabler/icons-vue";
 import TeamPerson from "~/components/custom/TeamPerson.vue";
 import CarrierJobListItem from "~/components/custom/CarrierJobListItem.vue";
@@ -85,16 +80,20 @@ import RobertFoto from "/public/robert1.jpg";
                         </template>
                         <template #contribution>
                             <ul class="list-disc ml-8">
-                                <li><b>Projektowanie architektury:</b> Uczestniczenie w projektowaniu architektury nowych
+                                <li><b>Projektowanie architektury:</b> Uczestniczenie w projektowaniu architektury
+                                    nowych
                                     modułów i projektów
                                 </li>
-                                <li><b>Automatyzacja testów:</b> Wprowadzenie Test Containers do projektów, co umożliwiło
+                                <li><b>Automatyzacja testów:</b> Wprowadzenie Test Containers do projektów, co
+                                    umożliwiło
                                     przeprowadzanie testów na bazach danych podobnych do używanych przez klienta
                                 </li>
-                                <li><b>Zaawansowana znajomość technologii:</b> Doskonalenie znajomości frameworków (Vue.js,
+                                <li><b>Zaawansowana znajomość technologii:</b> Doskonalenie znajomości frameworków
+                                    (Vue.js,
                                     Vuetify, .NET, Entity Framework Core) oraz narzędzi (SQL, Docker).
                                 </li>
-                                <li><b>Automatyzacja CI/CD:</b> Tworzenie pipeline'ów w Jenkinsie do budowania, testowania i
+                                <li><b>Automatyzacja CI/CD:</b> Tworzenie pipeline'ów w Jenkinsie do budowania,
+                                    testowania i
                                     wdrażania aplikacji oraz infrastruktury jako kodu (Infrastructure as Code).
                                 </li>
                                 <li><b>Poprawa wydajności pracy zespołu:</b> Udoskonalenie procesu deweloperskiego oraz
@@ -118,13 +117,15 @@ import RobertFoto from "/public/robert1.jpg";
                         </template>
                         <template #contribution>
                             <ul class="list-disc ml-8">
-                                <li><b>Realizacja projektów dla wybranych modeli samochodów:</b> Udział w projektach związanych
+                                <li><b>Realizacja projektów dla wybranych modeli samochodów:</b> Udział w projektach
+                                    związanych
                                     z modelami BMW G60, BMW G61, oraz Rolls Royce Cullinan.
                                 </li>
                                 <li><b>Automatyzacja operacji:</b> Tworzenie skryptów pomocniczych w celu automatyzacji
                                     powtarzalnych operacji, np. programowanie robotów.
                                 </li>
-                                <li><b>Tworzenie dokumentacji:</b> Opracowywanie dokumentacji dla zrealizowanych projektów,
+                                <li><b>Tworzenie dokumentacji:</b> Opracowywanie dokumentacji dla zrealizowanych
+                                    projektów,
                                     zapewniając kompletność i zgodność z wymaganiami klientów.
                                 </li>
                             </ul>
@@ -144,69 +145,49 @@ import RobertFoto from "/public/robert1.jpg";
                 </template>
                 <template #technology>
                     <div>
-<!--                        <TechnologyListItem main-text="Django" sub-text="1 rok">-->
-<!--                            <template #icon>-->
-<!--                                <IconBrandDjango size="20" :strokeWidth="1"/>-->
-<!--                            </template>-->
-<!--                        </TechnologyListItem>-->
-<!--                        <TechnologyListItem main-text="Django" sub-text="1 rok">-->
-<!--                            <template #icon>-->
-<!--                                <IconBrandReact size="20" :strokeWidth="1"/>-->
-<!--                            </template>-->
-<!--                        </TechnologyListItem>-->
-<!--                        <TechnologyListItem main-text="Django" sub-text="1 rok">-->
-<!--                            <template #icon>-->
-<!--                                <IconBrandNextjs size="20" :strokeWidth="1"/>-->
-<!--                            </template>-->
-<!--                        </TechnologyListItem>-->
-<!--                        <TechnologyListItem main-text="N" sub-text="1 rok">-->
-<!--                            <template #icon>-->
-<!--                                <IconBrandNodejs size="20" :strokeWidth="1"/>-->
-<!--                            </template>-->
-<!--                        </TechnologyListItem>-->
-                        <TechnologyListItem main-text="HTML" sub-text="1 rok">
+                        <TechnologyListItem main-text="HTML" sub-text="2 lata">
                             <template #icon>
                                 <IconBrandHtml5 size="20" :strokeWidth="1"/>
                             </template>
                         </TechnologyListItem>
-                        <TechnologyListItem main-text="ASP .NET Core" sub-text="1 rok">
+                        <TechnologyListItem main-text="ASP .NET Core" sub-text="2 lata">
                             <template #icon>
                                 <IconBrandCSharp size="20" :strokeWidth="1"/>
                             </template>
                         </TechnologyListItem>
-                        <TechnologyListItem main-text="SQL" sub-text="1 rok">
+                        <TechnologyListItem main-text="SQL" sub-text="2 lata">
                             <template #icon>
                                 <IconSql size="20" :strokeWidth="1"/>
                             </template>
                         </TechnologyListItem>
-                        <TechnologyListItem main-text="Vue.js" sub-text="1 rok">
+                        <TechnologyListItem main-text="Vue.js" sub-text="2 lata">
                             <template #icon>
                                 <IconBrandVue size="20" :strokeWidth="1"/>
                             </template>
                         </TechnologyListItem>
-                        <TechnologyListItem main-text="Django" sub-text="1 rok">
+                        <TechnologyListItem main-text="Django" sub-text="2 lata">
                             <template #icon>
                                 <IconBrandPython size="20" :strokeWidth="1"/>
                             </template>
                         </TechnologyListItem>
                     </div>
                     <div>
-                        <TechnologyListItem main-text="CSS, SCSS" sub-text="1 rok">
+                        <TechnologyListItem main-text="CSS, SCSS" sub-text="2 lata">
                             <template #icon>
                                 <IconBrandCss3 size="20" :strokeWidth="1"/>
                             </template>
                         </TechnologyListItem>
-                        <TechnologyListItem main-text="Jenkins" sub-text="1 rok">
+                        <TechnologyListItem main-text="Jenkins" sub-text="2 lata">
                             <template #icon>
                                 <IconArrowDownCircle size="20" :strokeWidth="1"/>
                             </template>
                         </TechnologyListItem>
-                        <TechnologyListItem main-text="Postgres, SQL Server" sub-text="1 rok">
+                        <TechnologyListItem main-text="Postgres, SQL Server" sub-text="2 lata">
                             <template #icon>
                                 <IconDatabase size="20" :strokeWidth="1"/>
                             </template>
                         </TechnologyListItem>
-                        <TechnologyListItem main-text="Vuetify, Devextreme" sub-text="1 rok">
+                        <TechnologyListItem main-text="Vuetify, Devextreme" sub-text="2 lata">
                             <template #icon>
                                 <IconComponents size="20" :strokeWidth="1"/>
                             </template>
