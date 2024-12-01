@@ -7,7 +7,11 @@ import {Dialog, DialogContent, DialogFooter, DialogHeader, DialogTitle, DialogTr
 import {DialogClose} from "radix-vue";
 import {useClipboard} from "@vueuse/core";
 
-const source = ref('kontakt@programnazlecenie.pl')
+const props = defineProps<{
+    email: string,
+}>()
+
+const source = ref(props.email)
 const { text, copy, copied } = useClipboard({ source })
 </script>
 

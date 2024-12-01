@@ -59,7 +59,7 @@ const carouselData = [
     },
 ]
 
-const source = ref('kontakt@programnazlecenie.pl')
+const source = ref('kontakt.maciejkrawczyk@gmail.com')
 const {text, copy, copied} = useClipboard({source})
 </script>
 
@@ -67,7 +67,7 @@ const {text, copy, copied} = useClipboard({source})
     <div class="flex justify-center items-center bg-background-image pt-20">
         <main class="flex flex-col w-screen max-w-screen-xl items-center">
             <!---->
-            <Header/>
+            <Header :email="source"/>
             <!---->
             <h2 class="text-4xl text-center font-semibold my-6 mt-16">Zespół</h2>
             <div>
