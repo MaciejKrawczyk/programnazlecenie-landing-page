@@ -29,7 +29,7 @@ const props = defineProps<{
                         <p class="my-2 w-11/12 text-center">
                             {{ props.description }}
                         </p>
-                        <div class="flex gap-4 my-4 w-11/12 justify-center">
+                        <div class="flex gap-4 my-4 w-auto justify-center">
                             <Button class="flex justify-between flex-nowrap items-center">
                                 <a :href="props.githubLink" target="_blank">
                                     <div class="flex">
@@ -52,7 +52,7 @@ const props = defineProps<{
                     </div>
                 </div>
 
-                <div class="sm:grid sm:grid-cols-2 overflow-auto flex-grow">
+                <div class="sm:grid sm:grid-cols-2 overflow-auto flex-wrap w-10/12">
                     <div class="border-r-2 border-gray-200 pl-6 pr-6">
                         <h5 class="text-2xl font-semibold">Kariera</h5>
                         <div>
